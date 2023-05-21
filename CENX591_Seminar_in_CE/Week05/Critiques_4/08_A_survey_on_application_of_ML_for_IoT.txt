@@ -1,0 +1,162 @@
+"A survey on application of machine learning for Internet of Things" by
+Laizhong Cui, Shu Yang, Fei Chen, Zhong Ming, Nan Lu, Jing Qin
+
+Article  in  International Journal of Machine Learning and Cybernetics published online on 11 June 2018
+
+PRELUDE:
+IoT
+systems are producing massive data and thus more and more IoT applications and services are emerging.
+
+Many researches study how to utilize machine learning to solve networking problems, including
+routing, traffic engineering, resource allocation, and security. Recently, there has been a rising trend of employing machine
+learning to improve IoT applications and provide IoT services such as traffic engineering, network management, security,
+Internet traffic classification, and quality of service optimization. This survey paper focuses on providing an overview of the
+application of machine learning in the domain of IoT.
+
+1. Introduction
+Internet of Things (IoT) is becoming a new pervasive and
+ubiquitous network paradigm offering distributed and transparent services.
+
+As the popularity and widespread use of IoT, IoT applications are developed to provide more accurate and more fine-grained services to users. These IoT big data can be further processed and analyzed to provide intelligence for the IoT service providers and users.
+
+the IoT data analytic procedures [6–8].
+Over the past decade, the artificial intelligence (AI)
+achieves a great success with the advances in computing technologies of cloud computing, graphics processing unit(GPU) computing, and other hardware enhancements [9]. Machine learning is the most representative
+AI algorithm, which has been already applied in multiple
+fields, such as computer vision, computer graphics, natural
+language processing (NLP), speech recognition, decisionmaking, and intelligent control.
+
+ machine learning can also bring a potential benefit to computer network. researches HAVE ALREADY studied how to utilize machine learning
+to solve networking problems, including routing, traffic
+engineering, resource allocation, and security [10–14].
+Machine learning has been regarded as the key technology of autonomous smart/intelligent network management
+and operation.
+
+
+As a summary, the original contributions of this paper
+are as follows:
+• We illustrate the potential of machine learning for traffic profiling. The unsupervised solutions and supervised
+solutions are presented detailedly.
+• We make a summary on the IoT device identification with
+machine learning, in terms of mobile phone identification
+and general IoT device identification.
+• We review IoT system security based on machine learning approaches, in terms of device security and network
+security.
+• We summarize typical IoT applications leveraging
+machine learning, including personal health applications
+and industrial applications.
+• We investigate the edge computing and SDN in IoT using
+machine learning, including edge computing infrastructure design and IoT network management.
+• We also discuss the challenges and open issues on the
+reviewed areas, including traffic profiling, IoT device
+identification, security and edge computing, and SDN
+via machine learning.
+
+Section 2 introduces the progress about the application of
+machine learning to traffic profiling. Section 2 discusses how
+to use machine learning to identify IoT devices. Section 4
+presents the security solutions of IoT systems by machine
+learning. Section 5 presents edge computing infrastructures
+based on machine learning. Section 6 describes how to use
+SDN with machine learning to manage the IoT network. Section 7 summarizes the typical IoT applications with machine
+learning. Finally, Sect. 8 concludes this paper.
+
+
+USES OF ML for/IN iot
+2. Traffic profiling
+Traffic profiling refers to the fundamental task of characterizing, understanding the traffic patterns in communication
+networks, including IP, wireless, mobile networks etc
+For instance, among the benefits, detecting abnormal traffic specifically enhances the security of
+the underlying networks, which have gained considerable
+research efforts in recent years.
+Supervised and unsupervised
+
+3. IoT device identification
+Device identification refers to a mechanism that predicts the
+type of an internet-of-thing (IoT) device according to the
+device’s characteristics
+eg: 3.1 Mobile phone identification using kNN and SVM. the
+time needed to identify a mobile phone is about 15 min
+
+Understand the efforts of different machine learning
+approaches  Another interesting problem relates to how
+to choose machine learning algorithms. Researchers have
+proposed a bunch of algorithms. How different algorithms
+influence IoT device identification and how to define features input to the machine learning algorithms are yet to be
+understood.
+
+4. Providing Security
+The researchers rightly pointed out how Security problems in IoT networks are more and more
+important with the increasing number of attacks nowadays. The IoT networks are more vulnerable than traditional
+1406 International Journal of Machine Learning and Cybernetics (2018) 9:1399–1417
+1 3
+network because of the characteristics of IoT devices and
+communication protocols. For example, (1) IoT devices are
+usually equipped with lower battery and micro-controller,
+thus it is easy to be flooded; (2) IoT communicate with each
+through Bluetooth, ZigBee, WIFI or GSM, which are more
+vulnerable to attacks.
+
+a. Device:the volume of the traffic,
+the rate of service, the rate of losses, the length of packets
+queue and time of user action to inquiry as indicators, to
+unambiguously define the state of an element. ,and 
+b. network security
+
+challenges: ddos, security infreastructure, data acquisition
+
+5. Edge computing with machine learning
+Edge computing is an emerging computing paradigm which refers to a range of networks and devices at or near the user. For faster performance.
+
+6. Software‑defined networking
+with machine learning in IoT
+
+Using Sofware to configure and route dcision 
+SDN can play
+an important role in the IoT world [62]. However, also due
+to the complexity of IoT, the control plane needs machine
+learning for better management of the networks.The Control Plane refers to the network architecture component that defines the traffic routing and network topology.
+
+6.2 Intrusion detection:Using machine learning, the controller
+can judge whether there is intrusion or not. LIMITATION:Overheads in control plane,DDOS.
+
+7. IOT Applications
+. The system first collects available user health
+data, including health history, demographic features and
+previous collected IoT data from medical or health sensors.
+Then, with classification models like decision tree, logistic regression and LibSVM, the system makes predications
+about the diseases. Each disease is related to some attributes
+that need to be monitored. At last, a mathematical optimization model is used to recommend the best IoT solution or
+wearable devices.  
+
+Authors discussed research paper that innovated a system that can detect
+the human presence using IoT devices, and do not rely on
+devices, like cameras and motion detectors, that explicitly
+detect human presence.
+
+user activity recognition
+mechanism based on phone accelerometers.
+
+ proposed an agriculture system that can
+monitor the environment conditions of vineyard, and predict the grape diseases in its early stages.the accuracy of the hidden markov model is 90.9%, which
+greatly improve the accuracy of statistical methods.
+
+8. Conclusion
+Machine learning has a great potential to be the key technology for IoT. Machine learning trends to provide analytics
+for the IoT applications. Despite the recent wave of success
+of machine learning for networking, there is a scarcity of
+machine learning literatures about its applications for IoT
+services and systems, which this survey aims to address.
+This paper is different from the previously published survey papers in terms of focus, scope, and breadth; we have
+written this paper to emphasize the application of machine
+learning for IoT and the coverage of recent advances. Due
+to the versatility and evolving nature of IoT, it is impossible
+to cover each and every application. However, this paper has
+made an attempt to cover the major applications of machine
+learning for IoT and the relevant techniques, including traffic
+profiling, IoT device identification, security, edge computing
+infrastructure, network management based on SDN, and typical IoT applications. We have presented a thorough study on
+the recent researches about the application of machine learning for IoT, its technical progress, and application domains.
+We have also presented concise research challenges and
+open issues, which are critical to the application of machine
+learning for IoT.
