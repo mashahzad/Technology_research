@@ -1,0 +1,113 @@
+"A Cooperative Learnign Scheme for Energy Efficient Routing IN WSN"
+
+BY:
+Dr. Sami AlWakeel  and Dr. Najla AlNabhan
+
+
+Prelude:
+WSNs are gaining more interst ina a variety of application. 
+
+Network lifetime and efficeincy are the most considered issues in wsn based systems. The scarciest resource being energy.
+
+Most energy spent on Communication: Route discovery and data transmission.
+
+Paper presents a novel design of a cooperative nodes learnign scheme for CEERA(Cooperative energy efficent routing) in WSN
+
+1.INTRODUCTION:
+
+In WSNs, a sensor node typically includes: A sensing unit, a microcontroller, a radio transciever, batteru/ power sources.
+As sensor nodes are constrained by the amount of battery power available, it is necessary to conserve individual node energy to maximixe system life.
+
+Introducing CCERA: novel design for energy-efficient routing algorithm.
+algorithm efficiently avoids the above described consumption in energy as it does not require any prior configuration or routing discovery operations.
+
+<Section II describes the underlying network, deployment,
+traffic and energy models. Section III explains the design of
+CEERA. In section IV, we present and analyze the
+performance numerical results. Finally, we conclude the
+paper in section V.>
+
+2. MODELS, ASSUMPTIONS, AND PERFORMANCE
+MEASURES:underlying network
+model and other related models, including: deployment,
+traffic, and energy models
+
+A. Network Model:In any WSN, data being sensed by the nodes in the
+network must be transmitted to a control center or BS.
+
+Possible sub-models:
+1) The BS is fixed at a far distance from the sensor nodes. 
+2) The sensor nodes are homogeneous and are energy constrained with uniform energy. 
+3) Nodes have no location information. 
+4) Not all nodes are able to reach BS. 
+5)Symmetric propagation channel: that means the energy required to transmit a message from node A to node B is the same as the energy required for transmitting a message from node B to node A.
+
+B. Deployment Model:deployment is either random or deterministic.
+
+In random deployment, sensor nodes are deployed by air-dropping them or throwing them randomly in a target area. In contrast, in the deterministic deployment sensors are placed at pre-determined locations. 
+
+The random deployment scheme is commonly used and more realistic strategy in most of WSNs applications. Our research is based on random deployment.
+
+The base station location plays a significant role in routing algorithm performance. More specifically, for a given Dmax, number of nodes within this distance to the base station is a key parameter that has a significant impact on the network operational lifetime.
+<FIG page 2>
+
+C. Traffic Model:
+The inter-arrival time between message arrivals moments is environment dependent.
+
+D. Energy Model:An important consideration in sensor networks is the
+amount of energy required for sensing, computation, and communication. Different assumptions about the radio characteristics, including energy dissipation in transmit and receive modes, will change the performance outcomes of routing protocols. 
+In our work, we use a radio model
+
+For data messages, every data message (packet) has its unique identification number (ID) represented in X bits. Thus, up to 2powerx different messages can be generated and transmitted simultaneously by a node before it refreshes its counter.
+
+Every data message in our network contains: M-bits source node address, M-bits address for every transient node (optional), K-bits data, and X-bits message ID. In total, a data message contains [M+K+X] bits.
+
+F. Performance Measures:
+Our main performance measures are:Throughput, Delay, Delay time jitter, total energy dissipations, no of dead nodes, FND-First node to Die lifetime, Beta pf nodes to die lifetime, Half of the nodes Alive(HNA) LIFETIME. Last node to die lifetime(LND), Redundant arrival, congestion:happens wen a node receives same message more than, say, n times.
+
+One of the objectives of ou simulation study is to evaluate CEERA’s ability to minimize and control congestion, because it affects both the WSN overall energy and memory.
+
+3. CEERA’S LEARNING SCHEME DESIGN:
+
+In CEERA, nodes cooperate in learning from each other in order to have an efficient delivery of data to the base station. 
+Data transmission is cooperative from node to node until it received by the BS. 
+
+The BS sends an acknowledgement for each received message and is received by all sensor nodes.
+
+Also data message is flagged to be transmitted in either source-route mode or cooperative mode.
+
+Based on its energy level, a node may not participate in data transmission if its current energy is less than a predefined energy threshold E_min
+
+CEERA explained:
+In Cooperative transmission, each transient node t that receives the packet will carry out the following steps:
+1) Calculates the ID difference as: IDd=IDt-IDs: where IDt and IDs are the identification numbers (IDs) of transient and source nodes respectively.
+2) Starts a timer counter with value=IDd*
+3) Listens to BS’s ACK, and periodically decrements its timer.
+
+If the BS acknowledgment is not received within the timer value, the transient node retransmit message and appends its address to the address list of transient nodes.
+
+This process is repeated by every transient node until BS acknowledement(ACK) is received. Upon receiving the ACK, all nodes clear the call and reset their counters.
+<FIG page 4 VVVImp>
+
+4. PERFORMANCE RESULTS:
+
+We implemented our own event-driven simulation written in c++. Mainly we used NS2 to generate random network topology.
+
+We aimed at studying the impact of varying the scalar factor, Dmax, buffer size, and duplicatoipn factor over the collected performance measures including: Throughput delay, DTJ, memory occupation per node, energy dissipation, per initial energy, no. of died nodes, FND, BND, HNA, LND, Hop count, congestion/overhead, and duplicated arrivals.
+
+Table I shows performance results of varying scalar factor for a given simulation input and 40000 simulation messages, a buffer size=20, a mean
+interarrival time=0.5, an initial energy/node=101e+7, a duplicate factor=5, and Dmax= 10 m. We extract results for scalar values: 0,0.1,0.5,1,2,5,and 10. 
+
+<TABLE PAGE5>
+
+Hop count is improved with the non-zero value for the scalar. A deep observation for the simulation shows that the amount of energy dissipated by direct retransmission affects most of the nodes that connects network segment in early time. As a result for this, later messages follow longer paths to reach the base station which increases the average hop count. 
+
+Furthermore, we studied the performance of CEERA extensively when compared to other algorithms. Simulation shows a significant improvement in energy usage in routing with CEERA. CEERA outperforms Flooding 15, 27, and 41 times. Also, CEERA achieves over a factor of 1.34 and 1.26
+reduction in energy dissipation compared to Minimum Transmission Energy (MTE) scheme FOR SOME BS locations.
+
+5. CONCLUSION AND FUTURE WORK:
+
+Routing in sensor networks is a promising research area. Applications of WSNs show how it is important to design protocols and algorithms for wireless networks to be bandwidth and energy efficient.
+
+Some of these are: optimizing CEERA’s by introducing zero scalar factor for key nodes (BS neighbors), finding a method for optimal factors selection and evaluation, incorporating data aggregation to minimize energy dissipation and allowing node mobility. 
+
