@@ -1,0 +1,182 @@
+"Reliability in Internet of Things: Current
+Status and Future Perspectives" by Liudong Xing.
+
+Reliability is one of the main challenges that must be
+addressed to enable this revolutionized transformation. Based on
+the layered IoT architecture, this article first identifies reliability
+challenges posed by specific enabling technologies of each layer.
+
+Challenging research problems and opportunities are then discussed in relation to current underexplored behaviors and future
+new aspects of evolving IoT system complexity and dynamics.
+
+. Reliability models and solutions
+at four layers (perception, communication, support, and application) are reflected and classified.
+
+1. Introduction
+
+ In other
+words, reliability is one of the crucial requirements for adoption of the IoT in critical applications [3]–[10]. Malfunctions
+of supporting IoT devices (e.g., wearable medical devices),
+failing to capture critical data, any network outage, data corruption, or loss during transmission or storage may cause
+catastrophic effects, such as mission failure, financial loss,
+and harm to people and environments
+
+<The paper analyses relaiblilty aspect and address issues arising form each suggested solution right form the perceptoin llayer, comm. layer, support layer to user in Application Layer >
+
+Reliability design is concerned with
+choosing proper components, redundancies, and system configurations to ensure that a system can meet its reliability
+requirements under its operating environment for a certain time
+period. 
+
+II. IOT ARCHITECTURE AND RELIABILITY CHALLENGES
+
+Due to limited resources (power, computation, storage, and
+communication capacity), IoT devices especially those operating in harsh and unattended environments are prone to failures.
+They often communicate through wireless links that are also
+error prone due to noises, signal attenuations, or channel
+fading. 
+
+Advances in various IoT enabling technologies are making
+the IoT systems more powerful and intelligent. On the other
+hand, the cooperation and interaction among the system components become more complicated, creating new and unknown
+dependencies/
+
+complexities in iot data collectoin
+ During different phases, the system may need to
+perform different tasks or functions involving different subsets
+of system resources or components. These components may
+undergo different environment conditions and stress levels,
+thus have different failure rates or mechanisms during different
+phases [97]. For example, in a smart home, its power generation system uses solar energy and standard electricity [91].
+Due to the changing brightness of the sun, the solar panels function with different production performance with time.
+During some time (e.g., afternoon), energy from the solar panels is sufficient to supply the electrical panel of the smart
+home (even with extra electricity being stored or sold to the
+public grid); during other time (e.g., evening), the solar panels can stop functioning and electricity stored and/or from
+the public grid has to be used to supply the smart home.
+
+The daily cycle of this person consists of
+two phases: 1) inactive night sleep and 2) active daytime
+activities. During the night phase, only the physiological
+information (e.g., blood pressure and heart rates) is measured
+by biosensors; during the daytime phase, both the physiological and motion data are monitored by biosensors and
+motion sensors, respectively. In both examples during different
+phases, different subsets of system components (e.g., sensors)
+contribute to the system function, requiring a distinct reliability model to describe the system failure behavior at each
+phase.
+
+III. IOT PERCEPTION TECHNOLOGIES RELIABILITY
+At the bottom layer of the IoT, smart, low power, and
+microsensor devices are typically deployed.
+So the reliability also diversifies
+A. Component-Level Reliability :Reliabilty at component level chanegs with chaneg in environemntal setup.It was revealed that the cold standby
+technique is more reliable than the hot one.Considering the crucial role of the sink node (base station) in WSNs and the need for fast recovery in the case of
+the failure of the primary sink node, the hot standby sparing
+design was considered in [108] to achieve a highly reliable
+sink node subsystem. 
+
+B. End-to-End Path-Level Reliability:
+One important application
+of the path-level reliability evaluation is to verify and compare the reliability performance of different routing protocols.
+
+C. System-Level Reliability:
+
+Reliability based on a group fo ssyetems working together. WSNs may undergo
+common-cause failures (CCFs), where multiple sensors fail
+at the same time due to a shared cause, such as extreme
+conditions, design deficiency, and humidity.
+
+IV. IOT COMMUNICATION AND TRANSPORT RELIABILITY
+
+The CL is responsible for providing a ubiquitous access
+and networking environment for the PL.
+As we know, In the case of a failure of a node or a link on the selected
+path, a reliable routing protocol is responsible for detecting the occurrence of the failure and finding an alternative
+path to accomplish the desired information transmission.
+
+A. Multipath Routing
+For failure resilient WSNs, multipath routing protocols have
+been designed, which use multiple alternative paths between
+the source and the destination to achieve high reliability 
+The multiple paths may be link disjoint, node disjoint, or
+overlapped/correlated. They may be used in parallel, or in
+a standby style 
+
+B. Reliability-Aware Single-Path Routing
+In addition to multipath routing, there also exist works on
+designing reliability into the single-path routing algorithms.
+
+C. Retransmission-Based Mechanisms
+Based on the ARQ protocol, the retransmission-based mechanism uses ACK and timeout to provide reliable data transmissions if a condition like, say, the number of retransmissions
+exceeds a predetermined maximum value.
+
+V. IOT SUPPORT TECHNOLOGIES RELIABILITY
+
+The SL is mainly responsible for storing and processing
+mass data in the IoT
+
+A. Cloud Fault-Tolerance Techniques
+
+Examples include but not limited to:
+1) Retrying: a failed service task is retried on the same
+resource;
+2) Alternate Resource: a failed service task is retried on
+another resource; 
+3))) replication
+4) Checkpointing
+
+
+B. Cloud Data Reliability Under Cyberattacks
+
+Multiple VMs configured alike on the same cloud present a security chalenneg to the cloud securitty. In particular, the CRA may be
+launched by malicious attackers, where VMs running the malware are co-located with a target user’s VMs and a side
+channel can then be established to enable the data theft or
+corruption.
+
+C. Cloud-RAID Reliability
+The traditional RAID architecture has
+seven levels with level 0 implementing the data stripping technique and no redundancy, level 1 implementing the mirroring
+redundancy (duplicated data stripes), and levels 2–6 implementing different parity ECC techniques (e.g., level 2 uses
+the Hamming code, and level 5 uses the block-level distributed parity code) 
+
+D. SAN Reliability
+An SAN is a high-speed FC fabric capable of connecting any server and any storage element, allowing
+multiple storage resources to be accessed by multiple hosts
+simultaneously 
+
+E. Edge and Fog Computing Reliability
+As variants and extensions of the conventional cloud
+computing, edge computing and fog computing are gaining popularity for IoT applications due to their advantages in improving the response time and saving badwidth.
+
+VI. IOT APPLICATIONS AND SERVICES RELIABILITY
+
+A. Smart Home Reliability
+
+B. Body Sensor Network Reliability
+Due to the safety-critical applications of the BSN (e.g.,
+healthcare and military), reliability modeling and design of
+BSNs have received good research attentions.
+
+C. Smart Grid Reliability
+As another important IoT application, smart grids aim to
+enable timely fault detection and self-healing without the intervention of technicians, thus ensuring a more reliable supply and more resilient to disasterss.
+
+VII. PERSECTIVE FOR FUTURE DEVELOPMENT
+
+Conclusion
+Despite the rich and fast-growing body of works on IoT, the
+reliability research is still in its early stage. As IoT systems
+and applications evolve, additional new aspects of system complexity and dynamics may arise, making the existing reliability
+models and solutions inadequate or inaccurate. New and efficient reliability models and tools are expected for capturing
+the new features and behaviors, leading to more effective
+and accurate IoT system reliability analysis, optimization, and
+design. The ultimate goal is to transform our society toward
+being ICE.
+
+
+need research in cross-domain, cross-layer reliability research,
+cascading failres-Driven by factors such as dynamic changes in
+network workloads caused by a component failure (e.g., the
+failure of a sensor node in WSNs [237] and the failure of
+a transmission line in smart grids [67]), a chain reaction or
+domino effect takes place causing extensive damage and even
+outage of the entire network. 
