@@ -1,0 +1,70 @@
+"An Intelligent Routing Approach for Wireless Sensor Networks"
+
+BY:
+Dr. Najla Al-Nabhan, and
+Dr. Sami Al-Wakeel 
+
+Wireless sensing technology applications faces many challenges, mainly caused by communication failures, storage and computational constraints and limited power supply.
+
+1. INTRODUCTION:
+
+Wireless Sensor Networks (WSNs) present a revolution in the field of wireless communication and embedded systems as they allow new generations of applications in many areas such as environmental monitoring, military and security, health care, structural-health monitoring, intelligent transportation systems, Internet of Things (IoT), and as a part of many smart systems such as smart cities.
+
+<FIG PAGE 1>
+In WSN, data transmission is performed in multi-hop fashion. This form of communication possibly floods the network with a large number of data packets due the multiple broadcasts.
+
+Section II presents the detailed design of our approach. Section III
+discusses the design of our simulation experiment. In section IV, we present simulation results. Finally in Section V, we conclude our findings and provide future work.
+
+2. INTELLIGENT ROUTING APPROACH WITH ENERGYEFFICIENCY FOR WIRELESS SENSOR NETWORK
+
+Explain the concept:
+
+Every data packet in our network contains: M-bits source node address,
+M-bits address for every transient node (optional), K-bits data, and X-bits packet ID. In total, a data packet contains [M+K+X] bits.
+
+this approach achieves energyefficiency by minimizing packet retransmission caused by transient nodes. It allows the transient sensor nodes to response intelligently for receiving data packets from source nodes.
+
+Our approach maximizes the lifetime of sensor nodes by
+considering the residual energy level as a major criteria for the
+participation in the cooperative packet routing. Based on its
+energy level, a transient node may not participate in data
+transmission if its current energy level is less than a predefined
+energy threshold (Emin).  
+<FIG PAGE 3>
+
+3. PERFORMANCE EVALUATION AND RESULTS
+
+A. Simulation Setup We used unit disk graph (UDG) to model and study the
+underlying network. 
+
+We consider a sensor network where: 1) The BS is fixed, 
+2) sensor nodes are homogeneous and are energy constrained with
+uniform energy, 
+3) sensors have have no location information, 
+4) not all nodes are able to reach BS, 
+5) symmetric propagation channel: that means the energy required to transmit a packetfrom node A to node B is the same as the energy required for transmitting a packet from node B to node A.
+
+The base station location has a significant impact over the performance of any routing algorithm. Specifically, for a given Dmax, number of nodes within this distance to the base station is a key parameter that has a significant impact on the network operational lifetime.
+
+B. Performance Measures: Our mainperformance measures are as follows: Throughput (Thr), Delay(D), Delay Time Jitter (DTJ), the Total Energy dissipations(E), and number of dead nodes. 
+
+C. Simulation Results
+Given simulation input of 40.000 Simulation packets, 20 buffer size, inter-arrival time = 0.5, initial energy per node =101e+7, Duplicate factor=5, and Dmax= 10m, we extract results scalar values: 0, 0.1, 0.5, 1, 2, 5, and 10.
+
+
+The value of scalar factor has a direct influence on end-toend delay Since it controls the timer value (waiting period). Also, has a positive effect on energy dissipation. It delays the transmission of the received message for certain amount of time, within that time a message might be received and acknowledged by the BS which save energy and minimizes the
+overhead caused by this re-transmission.
+
+Simulation shows that the zero value for the scalar results a poor performance since our approach behaves similar to Flooding algorithm.
+
+The non-zero scalars have a positive impact over throughput for all BS locations compared to zero scalar. However, a higher scalar value does not always mean higher throughput. It is important when determining scalar value is to balance between our tendencies to save the retransmission energy, minimize delay caused by scalar factor, and utilize the available node resources. The optimal value for the scalar depends on the underlying network state and type of application. For our
+network, the best scalar value is between 0.1, 0.5 and 1 as it has the best throughput, increase storage sharing and also less delay than other values
+
+<TABLE PAGE 5>
+
+IV. CONCLUSION
+In this paper, we propose an intelligent routing approach for wireless sensor with a view of prolonging the lifetime of the network. Our protocol is expected to be very useful and applicable in most of the existing WSNs-based applications to minimize energy consumption and prolong the operational lifetime of the network; in particular for applications where accessing network sensors is either difficult or dangerous, such as extreme environments, highways, military field, and
+underground/underwater applications of WSNs. 
+
+A transient node makes a local decision to determine whether or not to cooperate in to retransmission of the received Packet. 

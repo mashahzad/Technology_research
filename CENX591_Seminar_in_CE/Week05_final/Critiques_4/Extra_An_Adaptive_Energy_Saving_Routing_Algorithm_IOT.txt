@@ -1,0 +1,136 @@
+"An Adaptive Energy-Saving Routing Algorithm for Mobile Wireless Sensor Networks"
+
+BY:
+Dr. Sami Alwakeel, Agung Prasetijo and Najla Alnabhan
+
+peulude:
+Our proposed routing algorithm adapts dynamically to network node's energy-level. 
+For data transport to the network base-station (network sink), it selects only nodes that balance the mobile WSN energy saving distribution.
+
+1. INTRODUCTION
+
+The main functionality of
+WSNs is to gather any scalar, audio, video or still image
+information from an area surrounding the sensors and deliver
+it to a base-station (sink). As wireless sensors are mostly
+limited in size, weight, as well as in cost, the resources of the
+sensors are also limited including: energy, processing power,
+and communication functionality.conserving energy is very much important for prolonging the WSNs’ life span.
+
+Energy saving can be achieved by selecting
+routing path through nodes with high energy level so that it
+increases the probability for message delivery to the WSN
+sinks (base-station). 
+
+nodes employed in ad-hoc WSNs
+do not have definite routes that will direct the message
+efficiently to the sink.our research is to develop an optimal routing algorithm
+for WSNs. The proposed MSN Adaptive Energy Saving
+Algorithm (MSN-AESA) is a solution to the energy-saving
+problem of mobile WSNs.
+
+Section II
+presents the related works, section III discusses the design of
+our proposed routing algorithm, and section IV, we show
+simulation results. Finally, the research contribution are
+summarized in section V. 
+
+2. RESEARCH IN WSN PROTOCOLS:
+In packet-switching protocol layer view,
+efficient energy consumption can be applied at any of protocol
+layers: physical layer, data-link, network layer, transport layer
+and application layer.
+
+physical placement and
+mobility of sensor nodes also affect the overall quality of
+service (QoS) as well as energy consumed [1,3]. Sparse sensor
+networks require longer radio coverage, consuming more
+energy, while dense sensor networks consume less power due
+to smaller radio transmission coverage but may have
+performance deterioration due to network message collision
+
+Transport schemes for delivering data also directly impact
+the energy use. Continuous data delivery needs large energy
+dissipation compared to even-driven data actions.
+
+For
+transport layer, transport reliability can be achieved by
+exchanging packet control messages i.e. providing end-to-end
+or hop-by-hop acknowledgment and packet recovery [1].
+Acknowledgments of packet handover are important to
+eliminate multiple-packet retransmissions that consumes more
+energy.
+
+3. MSN-AESA SYSTEM DECISION AND OPERATION (proposed design)
+
+With continuous mobility of network sensor nodes in
+habitat tracking and other WSN applications, development of
+efficient energy routing scheme is essential. MSN-AESA
+addresses such needs of mobile sensor network while allowing
+long nodes life time. The design of the algorithm and its
+theory of operation is discussed in what follow:
+1. If a node Ni receives a new message Mj, then Ni
+checks for its energy and its memory. If both
+resources are available, node Ni schedules the
+message Mj for a rebroadcast after time Tk. If either
+the node’s energy or node’s memory is not available,
+node Ni discards the message Mj and records the
+rejection. Tk is set as a function of node and message
+parameters as to be explained later.
+2. During the waiting for rebroadcast, Ni listens for other
+messages to arrive.
+3. If message Mj+1 is received and it is a duplicate
+message queued in memory (scheduled to be
+broadcast), node Ni checks that message Mj+1 does
+not exceed the maximum allowable number of
+duplicates of Dj ( i.e D ≤ Dj). If this is satisfied, node
+Ni then reschedules the message Mj for a different
+period Tk+1. If not, node Ni rejects the message Mj+1
+and records the dropping
+4. If an ACK message AMj is received from a basestation (BS) during the waiting period, node Ni drops
+the related message Mj from its memory buffer. 
+
+4. RESULTS AND PERFORMANCE ANALYSIS:
+
+Based on the CEERA design [5], a simulation model was
+developed to evaluate the performance of our algorithm. The
+model was built using the NS-2 Network Simulator. Various
+performance measures such as: throughput, number of
+1st International Conference on Electrical and Information Technologies ICEIT’2015 105
+retransmission (duplication) of messages, message delay,
+delay jitter, and congestion level were investigated in this
+study.
+
+we also measure the time it
+takes for the first-node to die (FND) and half of the network
+nodes to die (HND). The performance of MSN-AESA will
+directly be compared with the simple-flooding scheme. 
+
+MSN-AESA outperformed
+the simple-flooding scheme by around 10% more throughput
+in every simulation experiment with various values of network
+node number and message arrival rate. This can be achieved,
+provided that higher values are set for Dmax, memory size,
+and maximum number of duplicates allowed.
+
+<Dmax must be set around
+250 meters or more for the algorithm to achieve that 10%
+gain.
+>
+It reveals that a high density network decreases both
+schemes. However, MSN-AESA gives more stability to the
+throughput. 
+
+5. CONCLUSIONS
+
+In our proposed algorithm, MSN-AESA contributes to a
+10% gain in throughput. To get such additional throughput,
+transmission/reception range must be set for a minimum of
+250 meters, and a maximum number of duplicated message
+and memory size are limited to a minimum of 10 messages
+and eight messages respectively. The lifespan of the nodes is
+extended by almost twofold for the FND and 75% more HND
+lifetimes. The algorithm also perfectly suppresses congestion
+to 0%. Furthermore, in contrast to flooding scheme, MSNAESA algorithm works very well in the dense sensor network
+as the results suggest that there is no significant degradation
+for MSN-AESA performance measures.
