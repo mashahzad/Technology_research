@@ -1,0 +1,118 @@
+The SURVEY paper titled "Energy and time efficient task offloading and resource allocation on the generic IoT-fog-cloud architecture"
+
+By: Huaiying Sun, Huiqun Yu, Guisheng Fan, Liqiong Chen
+
+Abstract:
+With the exponential increase in the number of IoT devices and the amount of emitted data from these devices, it is expensive
+and inefficient to offload all tasks to the remote data center.
+Fog does not appear to replace cloud, they are complementary to
+each other, cooperation between them is worth studying. This paper proposes a general IoT-fog-cloud architecture that fully
+exploits the advantages of fog and cloud. Then, the energy and time efficient computation offloading and resource allocation
+is formulated into the energy and time cost minimization problem. We then propose an ETCORA algorithm to solve the
+problem, improving the energy consumption and completion time of application requests. Finally, extensive simulations are
+carried out to verify that the proposed method indeed outperforms the other two methods in reducing energy consumption
+and completion time of requests.
+
+1. INTRODUCTION:
+
+<FIG PAGE 4>
+<Fog intro and overview>
+Currently, a huge amount of data emitted by distributed
+IoT devices are transferred to the centralized cloud for
+processing before the results are returned back from the
+cloud to data consumers, which are always located adjacent
+to the original data sources. It is not efficient for some applications with rigid service
+delivery deadlines such as virtual reality, augmented reality
+and so on to be executed on remote cloud only. A promising
+Peer-to-Peer Networking and Applications (2020) 13:548–563
+/ Published online: 19 July 2019
+approach is to adopt the decentralized processing of IoT
+data. 
+ IoT devices (e.g., gateways, sensors, or embedded systems) provide computational, storage, and networking
+resources, which allow to transfer the execution of IoT applications to the edge of the network [7]. Thus, the approach
+is described as fog computing (or edge computing)
+Compared with
+the remote data center, it has the advantage of shortening
+application response time. Fog nodes are dispersed in geographic location and resource on them are limited compared
+with cloud.
+
+<The organization of this paper is as follows: Section 2
+introduces the related work. Section 3 introduces the system
+architecture and computation models. The following is the
+problem formulation. Section 5 describes the ETCORA
+algorithm, and the simulation evaluation is shown in
+Section 6. The last one is the conclusion.>
+
+3 System architecture and computing
+models:
+ a general architecture of IoT-fog-cloud.
+The architecture has three layers. The first layer is the
+infrastructure layer, which contains some IoT devices. The
+second layer is the fog layer, including some fog servers
+and controllers, which can be located at different geographic locations. The third layer is the cloud layer
+comprising cloud servers.
+
+The energy analysis
+module of the IoT device determines whether the device
+can serve offloaded tasks of other devices according to the
+energy and time constraints. The basic module of controller is responsible for
+information communication.
+
+4 Problem formulation:
+This paper is mainly to provide the optimal computation
+offloading strategy S∗ and transmission power strategy P∗,
+
+5 Energy and time efficient computation
+offloading and resource allocation:<IMPORTANT SECTION, Conssits of ECTORA algorithm> 
+
+<ALGORITHM ECTORA PAGE 9>
+5.1 Computation offloading selection
+The computation offloading selection is mainly to determine which task of the request needs to be offloaded to the
+fog or cloud, satisfying the task dependence and the number
+of tasks executed on fog layer as more as possible, making
+the energy and time cost of each application request as less
+as possible.If the local execution is larger, the task will be offloaded
+to the fog layer. otherwise, further considering whether it is
+possible to be offloaded to the cloud layer. If the execution
+overhead of the task on the cloud layer is smaller, it will be
+eventually offloaded to the cloud, otherwise it will stay on
+the local device.
+
+
+<IMP - The Algorithm page 8 >
+5.2 Transmission power allocation:
+The transmission power allocation is mainly to allocate
+transmission power to the tasks of each request optimally,
+minimizing the energy and time cost of task executed on
+fog or cloud 
+
+6 Performance simulation
+
+<FIG page 13>
+Due to lack of the realistic testbed, we evaluate the
+effectiveness of the proposed method by iFogSim [25]
+to simulate an IoT-fog-cloud environment (including 500
+IoT nodes, 60 fog nodes, and 20 cloud server nodes).
+iFogSim is an extension to the CloudSim framework [26],
+which has been widely used to simulate different computing
+modes<not so important>.
+
+7 CONCLUSION:
+
+<FIG PAGE 14>
+
+We then propose the
+ETCORA algorithm including 2 parts: computation offloading selection and transmission power allocation to solve
+the problem.Results show
+that our method indeed outperforms the other two methods in reducing energy consumption and completion time of
+requests
+
+Another two significant
+factors are the security and reliability of services, because
+they would also have direct impact on the performance of
+the IoT applications.
+
+ IoT-fog-cloud environment to extend the
+practicability of it. If so, it will benefit many aspects of
+our daily life such as the transportation, medical, industrial
+automation, smart home and emergency response.
