@@ -1,0 +1,172 @@
+"Performance, Reliability and Scalability for IoT" 
+
+By:
+Andriy Luntovskyy ad Larysa Globa
+
+<Abstract>
+There are a lot of apps and software platforms to IoT support.
+However, a most important problem of QoS optimization, which
+lays in Performance, Reliability and Scalability for IoT, is not yet
+solved. The extended Internet of the future needs these solutions
+based on the cooperation between fog and clouds with delegating
+of the analytics blocks via agents, adaptive interfaces and
+protocols.
+The next problem is as follows: IoT can generate large arrays of
+unmanaged, weakly-structured, and non-configured data of
+various types, known as "Big Data".
+
+Some advanced approaches for optimization of Performance,
+Reliability and Scalability for IoT-solutions are offered within the
+paper.
+
+<1. Introduction>
+<FIG 1>
+As basic platforms clouds, fog and data mining are
+used. The modern technologies are as follows: Blockchain,
+Machine Learning, IoT, Robotics, 5G. They involve new
+application fields, which require higher QoS, advanced
+Performance, Reliability and Scalability.
+
+<The further paper content was built as follows:
+1. Motivation and the aims of the paper are established
+(this Section I).
+2. State-of-the-art approaches to performance optimization
+and typical QoS requirements are discussed (Section II).
+3. Advanced analytics placement options on example of
+Cyber-PHY and robotics (cloud and fog based) are
+offered. The approaches are aimed to increasing of
+performance, reliability and scalability for IoTscenarios (Section III).
+4. Big Data shortcomings for important IoT areas are
+discussed (Section IV) as well as the solution
+approaches (Section V) offered. These can be partially
+ML based.
+5. Finalising, conclusions have been done and outlook
+provided (Section VI). >
+
+
+<2. PERFORMANCE OPTIMIZATION. QOS PARAMETERS>
+Modern networking uses widely management of QoSparameters aimed to Performance, Reliability and Scalability
+optimization [1, 2]. So-called IoT is based nowadays on IPv6.
+This brings more freedom in addressing of immense quantity of
+available devices: sensors piconets, Embedded, Wearable,
+Cyber-PHY, robots, intelligent stuff etc. Huge as well as
+heterogeneous data volumes (approx. 100PB to 100EByte) are
+acquired additionally causing Big Data shortcomings.
+
+These methods are as follows [1, 2, 21]:
+(1) Multi-threading.
+(2) Replication.
+(3) Caching on Client.
+(4) n-tier and use of proxies and gateways (GW).
+(5) highly-distributed Peer-2-Peer (P2P) as well as
+(6) further empiric rules (refer Table I).
+The small intelligent nodes in IoT-scenarios communicate
+via energy-autarky gateways with the capable server part. The
+considered approaches are able to increase the performance,
+reliability and scalability in desktop applications and IoT both. arameters within an IoT system in detail.
+Further performance optimization can be reached via the
+analytics migration into the clouds. The cloud-centric systems
+can discharge the energy-critical mobile nodes
+
+<3. ANALYTIC PLACEMENT FOR THE PERFORMANCE AND
+SCALABILITY>
+
+<FIG 4>
+The up-date highly-distributed apps (desktop as well as
+mobile) are characterized via multi-layer horizontal and vertical
+architecture. These layers can be as follows:
+1. PHY world and hardware.
+2. Software with interfaces (heterogeneous and adaptive).
+3. Middleware components and web services.
+4. Analytic blocks and mobile agents.
+The layers and tiers are combined and balanced between
+client, cloud and fog part considering the QoS parameters like
+performance (throughput, response time), reliability (probability
+of failure, availability) and scalability too. 
+
+<for scalability(as follows)>
+A. OPC UA
+The OPC UA specification as well as the based framework
+for IoT and Embedded is a multi-part specification and consists
+of the following parts, layers and tiers as it was depicted in Fig.
+5:
+ Concepts, Security Model, Address Space Model
+ Services, Information Model, Mappings
+ Profiles, DA (Data Access), AC (Alarms and
+Conditions), Prog (Programs), HA (Historical Access)
+ Discovery, Aggregates, PubSub.
+The following bus formats can be used:
+ EDDL (Electronic Device Description Language)
+ ISA Bus (Industry Standard Architecture)
+ Profibus as well as further fieldbus formats.
+
+B. ROS: The advantages of this OS are as the follows: fault-tolerance,
+reduced development complexity, availability of the examples
+on functionality and usage, documents and DB, video streams
+with tutorials, navigation via way-point navigation and location
+tracking [11  14]. The system is also configured to face
+recognition and sample calibration (Fig. 6).
+
+C. Advanced Architectures
+
+<FIG 7>
+
+The IoT and robotic applications can be classified into three
+following groups (Fig. 7). Therefore, we are talking about
+replaceable and customizable IoT and robotic algorithms in
+various fields of application (industry, medicine,
+communication and telecommunication, entertainment) which
+can acquire, then process and retrieve voluminous heterogenic
+Big Data in the given area [4  10].
+They must be able to solve the problem of QoS optimization
+(performance, scalability, reliability) as well as Big Data
+shortcomings in better way due to intelligent distribution of the
+Data Analytics:
+(1) Conventional IoT and robots.
+(2) Cloud-Centric IoT and robots.
+(3) Distributed (Fog-Cloud-cooperating) robots.
+Only the cloud-centric solution (2) and further distributed,
+fog-cloud-cooperating solution (3) both are able to overcome the
+discussed problems in full measure.
+
+<4. BIG DATA>
+Thus, the typical sampling, survey and accumulation models
+in IoT-scenarios can lead to necessity of solving of Big Data
+shortcomings. A typical data acquisition and evaluation model
+is shown in Fig. 9. Mostly, the collected data are large
+unstructured and unmanaged. 
+
+< 5. MACHINE LEARNING: WHAT IS IT?>
+The overcoming of myths and misconceptions is possible
+due to use of Machine Learning (ML). The (cloud-based) ML
+system enables artificial creation of knowledge from the
+obtained voluminous experimental data in background mode.
+An artificial system is learned from samples and examples and
+can summarize them after the completion of the study and
+evaluation (training) phase. The ML system recognizes
+templates and trends in research data. Thus, the ML (cloud)
+system can also evaluate data on representativeness and
+compliance
+
+<7. CONCLUSIONS AND OUTLOOK>
+1. IoT-scenarios need nowadays the efficient access and
+management models under considering of the QoS
+parameters and low-energy-criteria.
+2. Some classical as well as the advanced approaches to the
+optimization of Performance, Reliability and Scalability for
+IoT solutions were analysed.
+3. The extended Internet of the future needs these solutions
+based on the cooperation between fog and clouds with
+efficient delegating of the analytics blocks via agents,
+adaptive interfaces and protocols.
+4. The given work is also dedicated to Big Data sources and
+solutions in modern IoT issues. The best practices and case
+studies on Big Data and ML were discussed. The given
+papers deals with the both problems.
+5. This work can be qualified as a work-in-progress. The
+authors try to find new efficient method combinations to
+overcome the above-mentioned problems.
+6. The aspects of Security and Privacy in such potentially
+dangerous IoT-scenarios need a special considering for
+risks evaluation and cooperative intrusion detection with a
+separated research.
