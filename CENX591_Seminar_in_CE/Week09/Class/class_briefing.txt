@@ -1,0 +1,6 @@
+Make the folowing:
+
+Taxonomy for survey in "Scalability in IoT"
+Table for each division(sub topic) in each domain with referennce numer for the research paper cited.
+
+make a excel paper for resarch papers reviewed
