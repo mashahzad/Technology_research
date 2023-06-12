@@ -1,0 +1,4 @@
+Do a search in the internet and/or digital library for a list of articles/reports found in recent
+literature , on the IoT Scalability.
+- Based on this you need to submit : A detailed diagram that shows the taxonomy of the selected
+papers 
