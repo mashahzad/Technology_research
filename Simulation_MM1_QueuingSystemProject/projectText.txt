@@ -1,0 +1,17 @@
+Project Phase One (Project 1)
+The project's aim is to study the concept of "rare events" in simulation modeling, which is to be achieved in two phases:
+Phase One (Project One): technical definition of rare events followed by an in-depth literature review of the various research work undertaken in dealing with the simulation of rare events.
+Phase Two )Project Two): one of the presented techniques in phase one will be chosen and studied thoroughly with performance evaluation, indications of its shortcomings and sugestions
+
+
+####################################################
+ASSIGNMENT INFORMATION
+Due Date
+Wednesday, November 8, 2023
+9:00 AM
+Points Possible
+100
+The project's aim is to study the concept of "rare events" in simulation modeling, which is to be achieved in two phases:
+
+Phase One (Project One): technical definition of rare events followed by an in-depth literature review of the various research work undertaken in dealing with the simulation of rare events.
+Phase Two )Project Two): one of the presented techniques in phase one will be chosen and studied thoroughly with performance evaluation, indications of its shortcomings and sugestions.
