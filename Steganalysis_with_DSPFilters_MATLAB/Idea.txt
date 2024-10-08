@@ -1,0 +1,4 @@
+The difference in histogram after passing filters and analysis will reveal secret message. The original image is assumed to be obtained by taking screenshot of host message ridden host image. 
+
+
+Tests clearyl show that histogram analysis can be used to detect presence of hidden data. it may as well reveal the secret message after deep analysis.
